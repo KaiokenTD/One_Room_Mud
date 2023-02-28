@@ -4,6 +4,15 @@ import random
 import functions
 import time
 
+
+# dictionaries
+
+default_player_values = {
+    "max_hp": 100,
+    "level": 1,
+    "location": 1,
+
+}
 # variables
 
 dead = False
