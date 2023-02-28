@@ -6,7 +6,9 @@ the_arena = {
 
 
 class Room:
-
+    """
+    Root room object
+    """
     def __init__(self, room_name, description, exits, room_id):
         self._room_name = room_name
         self._description = description
