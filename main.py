@@ -7,9 +7,10 @@ import time
 # DICTIONARIES
 
 default_player_values = {
+    "hp": 100,
     "max_hp": 100,
     "level": 1,
-    "location": 1
+    "room_id": 1
 }
 
 player_ids = {}
@@ -19,6 +20,10 @@ player_ids = {}
 id_range = range(1, 1001)
 dead = False
 players_connected = []
+max_hp = default_player_values.get("max_hp")
+starting_hp = max_hp
+level = default_player_values.get("level")
+starting_room = default_player_values.get("room_id")
 
 
 # FUNCTIONS
@@ -58,7 +63,14 @@ while not dead:
     player_name = functions.validate_user_name().capitalize()
     welcome(player_name)
     new_player_id = generate_id()
-    assign_id(player_name, new_player_id)
+    assign_id(player_name, new_player_id)  # assign id info to dictionary
+    players_connected.append(player_name)
+# need to create a room
 
+    player_1 = player_classes.Player(player_name, starting_hp, max_hp, new_player_id, starting_room, dead=False)
+    print()
+
+    sleep()
     print("You Died.")
     dead = True
+
