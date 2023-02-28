@@ -1,6 +1,18 @@
 Name validation is good:
+
     assign player ID using for loop to generate id's driven by last index of dictionary
     store player's names and id's in a dictionary sorted by player name
 
-use a dictionary to store game default values e.g., (max_hp, level, room_id)
-instantiate player objects at a starting location with default values accessed from dictionary
+Name-filter:
+
+    Filter out list of un-usable names from a dictionary. e.g., npc's, imm's
+
+Logs:
+
+    Needs accurate logging/reporting system
+
+
+General Notes:
+
+    use a dictionary to store game default values e.g., (max_hp, level, room_id)
+    instantiate player objects at a starting location with default values accessed from dictionary

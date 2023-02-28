@@ -16,6 +16,7 @@ default_player_values = {
 # variables
 
 dead = False
+player_ids = {}
 
 
 def sleep(n=1):
@@ -29,9 +30,11 @@ def login_screen():
 while not dead:
     login_screen()
     sleep()
-    player_name = functions.validate_user_name()
+    player_name = functions.validate_user_name().capitalize()
+    print("{}, you existence awaits.".format(player_name))
     print("You Died.")
     dead = True
-    #  print("{}, you existence awaits.".format(player_name))
+
+
 
 
