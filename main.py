@@ -75,9 +75,6 @@ def login_screen():
     print("Welcome to One Room Mud.\n")
 
 
-# instantiate The ROOM
-
-
 while not dead:
     login_screen()
     sleep()

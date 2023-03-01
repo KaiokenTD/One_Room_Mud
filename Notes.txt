@@ -1,7 +1,7 @@
 General Notes:
 
     use a dictionary to store game default values e.g., (max_hp, level, room_id)
-    instantiate player objects at a starting location with default values accessed from dictionary
+    instantiate player objects at a starting location with default values
 
 Name-filter:
 
