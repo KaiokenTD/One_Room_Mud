@@ -78,7 +78,7 @@ def login_screen():
 # instantiate The ROOM
 
 
-while not dead:
+if __name__ == '__main__':
     login_screen()
     sleep()
     player_name = functions.validate_user_name().capitalize()
@@ -92,4 +92,5 @@ while not dead:
     sleep()
     print("You Died.")
     dead = True
-
+    if dead:
+        exit()

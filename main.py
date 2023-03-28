@@ -4,7 +4,7 @@ import random
 import functions
 import time
 
-# DICTIONARIES (empty containers at bottom)
+# DICTIONARIES
 
 default_player_values = {
     "hp": 100,
@@ -72,7 +72,7 @@ def welcome(player_name):
 
 
 def login_screen():
-    print("Welcome to One Room Mud.\n")
+    print("Welcome to Many Rooms Mud.\n")
 
 
 while not dead:
@@ -83,6 +83,7 @@ while not dead:
     new_player_id = generate_id()
     assign_id(player_name, new_player_id)  # assign id info to dictionary
     players_connected.append(player_name)
+    # event to set the players room_id to the login room
 
     print()
 
